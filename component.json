@@ -1,0 +1,14 @@
+{
+  "name": "fload",
+  "repo": "vesln/fload",
+  "description": "JavaScript loader",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "lib/browser.js",
+  "scripts": [
+    "lib/browser.js"
+  ],
+  "development": {
+    "chaijs/chai": "*"
+  }
+}
