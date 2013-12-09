@@ -31,4 +31,11 @@ coverage:
 	@./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha $(TESTS) \
 		-- --require test/support/bootstrap
 
+coveralls:
+	@./node_modules/.bin/istanbul cover \
+		./node_modules/.bin/_mocha --report lcovonly\
+		-- --require test/support/bootstrap \
+		$(TESTS) \
+		&& cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+
 .PHONY: all test coverage
