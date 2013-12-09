@@ -1,6 +1,7 @@
 [![NPM
 version](https://badge.fury.io/js/fload.png)](http://badge.fury.io/js/fload)
 [![Build Status](https://secure.travis-ci.org/vesln/fload.png)](http://travis-ci.org/vesln/fload)
+[![Coverage Status](https://coveralls.io/repos/vesln/fload/badge.png?branch=master)](https://coveralls.io/r/vesln/fload?branch=master)
 [![Code Climate](https://codeclimate.com/github/vesln/fload.png)](https://codeclimate.com/github/vesln/fload)
 
 # fload
