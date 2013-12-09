@@ -9,6 +9,29 @@ JavaScript file loader for browsers and Node.js
 
 ## Usage
 
+```js
+var fload = require('fload');
+
+fload(['dir', 'glob/*.js', 'another-dir'], {
+  pre: function(file, done) {
+    // before loading `file`
+    done();
+  },
+
+  post: function(file, contents, done) {
+    // after loading `file`, now we've got the exported objects
+    // however, when used in the browser, we don't have it :(
+    done();
+  },
+
+  done: function() {
+    // all files loaded
+  }
+});
+```
+
+_Node.js: You can use glob patterns_
+
 ## Installation
 
 npm:
