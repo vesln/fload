@@ -31,7 +31,7 @@ fload(['dir', 'glob/*.js', 'another-dir'], {
 });
 ```
 
-_Node.js: You can use glob patterns_
+_Node.js: You can use glob patterns and directories_
 
 ## Installation
 
