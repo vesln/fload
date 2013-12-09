@@ -5,7 +5,7 @@ version](https://badge.fury.io/js/fload.png)](http://badge.fury.io/js/fload)
 
 # fload
 
-Async try-catch.
+JavaScript file loader for browsers and Node.js
 
 ## Usage
 
