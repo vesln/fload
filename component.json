@@ -2,7 +2,7 @@
   "name": "fload",
   "repo": "vesln/fload",
   "description": "JavaScript file loader",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "license": "MIT",
   "main": "lib/browser.js",
   "scripts": [

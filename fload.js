@@ -211,7 +211,12 @@ require.register("fload/lib/browser.js", function(exports, require, module){
 
 function load(files, callbacks) {
   var target = document.getElementsByTagName('script')[0];
+  var noop = function() {};
+
   files = files.slice(0);
+
+  callbacks.pre = callbacks.pre || noop;
+  callbacks.post = callbacks.post || noop;
 
   (function next() {
     var file = files.shift();
@@ -245,7 +250,7 @@ module.exports = load;
 require.alias("fload/lib/browser.js", "fload/index.js");if (typeof exports == "object") {
   module.exports = require("fload");
 } else if (typeof define == "function" && define.amd) {
-  define(function(){ return require("fload"); });
+  define([], function(){ return require("fload"); });
 } else {
   this["fload"] = require("fload");
 }})();
